@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShelterSeek</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ShelterSeek</h1>
+            <p>Find the nearest shelter and stay safe.</p>
+        </header>
+
+        <div class="search-bar">
+            <input type="text" id="location-input" placeholder="Enter city or use your location..." />
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="map"></div>
+
+        <div id="suggestions">
+            <h2>Weather & Shelter Suggestion</h2>
+            <p id="weather-info">Fetching location and weather data...</p>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
